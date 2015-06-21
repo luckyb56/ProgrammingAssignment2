@@ -15,7 +15,7 @@ makeCacheMatrix <- function(x = matrix()) {
     get <- function() x
     setinv <- function(invmat) m <<- invmat  # stores the value of 'invmat' in parent environemt 
     getinv <- function() m  # returns the global value of vector 'm'
-    list(set - set, get = get,
+    list(set = set, get = get,
          setinv = setinv,
          getinv = getinv) #defining object names
 }
